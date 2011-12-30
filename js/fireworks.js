@@ -311,10 +311,10 @@ Particle.prototype = {
     context.fill();
 
     // draw in the images
-    context.drawImage(Library.smallGlow, x - 3, y - 3);
     context.drawImage(fireworkCanvas,
       this.gridX, this.gridY, 12, 12,
       x - 6, y - 6, 12, 12);
+    context.drawImage(Library.smallGlow, x - 3, y - 3);
 
     context.restore();
   }
@@ -436,6 +436,6 @@ var FireworkExplosions = {
 };
 
 // Go
-document.body.onload = function() {
+window.onload = function() {
   Fireworks.initialize();
 };
