@@ -1,0 +1,34 @@
+{
+  "short_name": "Fireworks",
+  "name": "Fireworks In Your Pocket.",
+  "icons": [
+    {
+      "src":"images/fireworks-icon36x36.png",
+      "sizes": "36x36"
+    },
+    {
+      "src":"images/fireworks-icon48x48.png",
+      "sizes": "48x48"
+    },
+    {
+      "src":"images/fireworks-icon72x72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src":"images/fireworks-icon96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src":"images/fireworks-icon144x144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src":"images/fireworks-icon192x192.png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html?launcher=true",
+  "background_color": "#000000",
+  "display": "standalone",
+  "theme_color": "#536878"
+}
