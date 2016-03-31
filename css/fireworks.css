@@ -7,6 +7,35 @@ html, body {
   overflow: hidden;
 }
 
+@keyframes fadeOut {
+	to {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fadeOut {
+	to {
+		opacity: 0;
+	}
+}
+
+.isPaused {
+	animation-play-state: paused;
+}
+
+main {
+	display: none;
+	text-align: center;
+	font-family: Helvetica, Arial, Sans-Serif;
+}
+
+main h1 {
+	color: white;
+	opacity: 1;
+	animation: fadeOut 7s forwards;
+	-webkit-animation:  fadeOut 7s forwards;
+}
+
 #library {
   display: none;
 }
