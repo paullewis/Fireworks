@@ -17,9 +17,12 @@ limitations under the License.
 -->
 <!doctype html>
   <head>
-    <meta charset="uft-8">
+    <meta charset="uft-8" />
+    <meta name="theme-color" content="#536878" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
     <title>Fireworks!</title>
     <link href="css/fireworks.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
   </head>
   <body>
 
@@ -28,7 +31,20 @@ limitations under the License.
       <img src="images/big-glow.png" id="big-glow" />
       <img src="images/small-glow.png" id="small-glow" />
     </aside>
+    <main id="welcome-back" class="isPaused">
+      <h1>Welcome back!</h1>
+    </main>
   </body>
   <script src="third_party/requestanimframe.js"></script>
   <script src="js/fireworks.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      console.log("Will service worker register?");
+      navigator.serviceWorker.register('service-worker.js').then(function(reg){
+        console.log("Yes it did.");
+      }).catch(function(err) {
+        console.log("No it didn't. This happened: ", err)
+      });
+    }
+  </script>
 </html>
